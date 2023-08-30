@@ -226,6 +226,15 @@ body {
     .contact-form textarea {
       margin: 0 50px 0 50px;
     }
+    .contact-us{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .contact-desc{
+        font-size: 10px;
+        font-weight: 200;
+    }
 }
 
 @media(max-width: 768px) {
