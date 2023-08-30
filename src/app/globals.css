@@ -254,11 +254,6 @@ body {
     }
 }
 
-.contact-form {
-    max-width: 800px;
-    text-align: center;
-}
-
 .contact-form label,
 .contact-form input,
 .contact-form textarea {

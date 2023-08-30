@@ -1,4 +1,3 @@
-// components/contact/ContactForm.tsx
 import React, { useState } from 'react';
 
 interface ContactFormData {
@@ -32,7 +31,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <section className='animate-fade-in flex justify-center items-center mt-10 mb-20'>
+    <div className='animate-fade-in flex justify-center items-center mt-10 mb-20'>
       <form onSubmit={handleSubmit} className="contact-form">
         <label htmlFor="name" className='animate-fade-in-top'>Name</label>
         <input type="text" id="name" name="name" className='animate-fade-in-down' value={formData.name} onChange={handleChange} required />
@@ -45,7 +44,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 
         <button type="submit" className='animate-fade-in-top'>Submit</button>
       </form>
-    </section>
+    </div>
   );
 };
 
