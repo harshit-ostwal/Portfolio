@@ -224,7 +224,7 @@ body {
     .contact-form label,
     .contact-form input,
     .contact-form textarea {
-      margin: 0 30px 0 30px;
+      margin: 0 50px 0 50px;
     }
 }
 
@@ -246,21 +246,11 @@ body {
 
     .timeline-dot {
         justify-items: center;
-    }  .contact-form label,
+    }  
+    .contact-form label,
     .contact-form input,
     .contact-form textarea {
-        display: block;
-        width: 300px;
-        text-align: left;
-        padding-left: 20px;
-        height: 50px;
-        border-radius: 20px;
-        margin-bottom: 5px;
-    }
-    
-    .contact-form textarea {
-        height: 150px;
-        padding-top: 20px;
+        margin: 0 30px 0 30px;  
     }
 }
 
