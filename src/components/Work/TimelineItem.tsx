@@ -1,5 +1,4 @@
 import React from 'react';
-import ScrollAnimation from '../ScrollAnimation';
 
 interface TimelineItemProps {
   date: string;
