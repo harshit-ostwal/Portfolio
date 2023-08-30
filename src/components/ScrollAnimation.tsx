@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 interface ScrollAnimationProps {
@@ -6,18 +6,22 @@ interface ScrollAnimationProps {
 }
 
 const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    ScrollReveal().reveal('.animate', {
-      delay: 200,
-      duration: 100,
-      distance: '50px',
-      origin: 'bottom',
-      easing: 'ease-in-out',
-      reset: true,
-    });
+    if (process.browser) {
+      ScrollReveal().reveal('.animate', {
+        duration: 1000,
+        distance: '50px',
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        reset: true,
+      });
+      setIsVisible(true);
+    }
   }, []);
 
-  return <div className="animate">{children}</div>;
+  return <div className={`animate ${isVisible ? 'visible' : ''}`}>{children}</div>;
 };
 
 export default ScrollAnimation;
