@@ -14,7 +14,7 @@ interface ContactFormProviderProps {
 }
 
 const ContactContext = createContext({
-    showForm: false,
+    showForm: true,
     setFormVisibility: () => { },
 });
 

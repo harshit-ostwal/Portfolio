@@ -22,6 +22,7 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-scroll-to-top": "^3.0.0",
+    "resend": "^1.0.0",
     "scrollreveal": "^4.0.9",
     "tailwind-merge": "^1.14.0",
     "typescript": "5.2.2"
