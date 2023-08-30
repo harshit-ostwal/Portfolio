@@ -5,9 +5,9 @@ import Button from './ui/Button';
 import { Instagram } from 'lucide-react';
 import Link from 'next/link';
 
-interface CoverProps {}
+interface CoverProps { }
 
-const Cover: FC<CoverProps> = ({}) => {
+const Cover: FC<CoverProps> = ({ }) => {
     return (
         <div className="flex rounded-2xl w-full bg-[url('/images/cover.jpeg')] bg-no-repeat bg-cover">
             <div className="flex justify-center md:rounded-2xl overflow-hidden md:px-10 py-5 bg-blur backdrop-filter backdrop-blur-md w-full gap-2 md:gap-10">

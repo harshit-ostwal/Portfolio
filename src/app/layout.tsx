@@ -2,8 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import SideBar from '@/components/Sidebar';
 import Navbar from '@/components/Navbar';
-import ContactForm from '@/components/ContactForm';
-import { ContactFormProvider, MenuProvider } from '@/components/Provider';
+import { MenuProvider } from '@/components/Provider';
 import BottomToTop from '@/components/BottomToTop';
 import { Toaster } from 'react-hot-toast';
 
@@ -21,19 +20,16 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <MenuProvider>
-                    <ContactFormProvider>
-                        <ContactForm />
-                        <Toaster />
-                        <div className="flex">
-                            <SideBar />
-                            <main className="flex-1 pl-0 lg:pl-[300px]">
-                                <Navbar />
-                                {children}
-                            </main>
-                        </div>
-                    </ContactFormProvider>
+                    <Toaster />
+                    <div className="flex">
+                        <SideBar />
+                        <main className="flex-1 pl-0 lg:pl-[300px]">
+                            <Navbar />
+                            {children}
+                        </main>
+                    </div>
                 </MenuProvider>
-                <BottomToTop/>
+                <BottomToTop />
             </body>
         </html>
     );
