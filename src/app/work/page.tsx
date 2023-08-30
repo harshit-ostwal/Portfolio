@@ -1,5 +1,4 @@
 import Cover from "@/components/Cover"
-import ScrollAnimation from "@/components/ScrollAnimation";
 import TimelineItem from '@/components/Work/TimelineItem';
 
 interface TimelineDataItem {
