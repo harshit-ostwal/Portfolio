@@ -12,6 +12,7 @@ const ContactPage: React.FC = () => {
     };
     return (  
         <>
+            <Cover />
             <div className='mt-10'>
                 <h1 className={"contact-us"}>Contact Us</h1>
                 <p className={"contact-desc"}>Feel free to reach out to us using the form below:</p>
