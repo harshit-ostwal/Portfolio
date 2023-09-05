@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import { MenuProvider } from '@/components/Provider';
 import BottomToTop from '@/components/BottomToTop';
 import { Toaster } from 'react-hot-toast';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Harshit Jain',
@@ -26,6 +27,7 @@ export default function RootLayout({
                         <main className="flex-1 pl-0 lg:pl-[300px]">
                             <Navbar />
                             {children}
+                            <Footer />
                         </main>
                     </div>
                 </MenuProvider>
