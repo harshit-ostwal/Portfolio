@@ -7,7 +7,7 @@ import {
 export default function Projects() {
     return (
         <>
-            <div className="flex flex-col mt-20 gap-10 lg:px-10">
+            <div className="flex flex-col mt-10 gap-10 lg:px-10">
                 <div>
                     <ProjectCardSection title="Projects" animation='animate-fade-in-top' data={projectCard} />
                 </div>
