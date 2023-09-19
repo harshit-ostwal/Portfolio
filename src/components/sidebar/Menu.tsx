@@ -15,6 +15,8 @@ import {
     Instagram,
     Layers,
     Linkedin,
+    ListFilter,
+    ListTodo,
     NewspaperIcon,
     User,
     User2,
@@ -48,24 +50,24 @@ const Menu: FC<MenuProps> = ({}) => {
             <List link="/" effect="slideUp" className='animate-fade-in-left'>
                 <Home /> Home
             </List>
-            <List link="/about" effect="slideUp"  className='animate-fade-in-right'>
+            {/* <List link="/bout" effect="slideUp"  className='animate-fade-in-right' >
                 <BadgeInfo/> About
             </List>
-            <List link="/skills" effect="slideUp"  className='animate-fade-in-left'>
+            <List link='/' effect="slideUp"  className='animate-fade-in-left'>
                 <Flame /> Skills
             </List>
-            <List link="/work" effect="slideUp"  className='animate-fade-in-right'>
+            <List link="/" effect="slideUp"  className='animate-fade-in-right'>
                 <Workflow/> Work
             </List>
-            <List link="/projects" effect="slideUp"  className='animate-fade-in-left'>
+            <List link="/" effect="slideUp"  className='animate-fade-in-left'>
                 <Folder/> Projects
             </List>
-            <List link="/blog" effect="slideUp"  className='animate-fade-in-right'>
+            <List link="/" effect="slideUp"  className='animate-fade-in-right'>
                 <FileEdit/> Blog
             </List>
-            <List link="/contact" effect="slideUp"  className='animate-fade-in-left'>
+            <List link="/" effect="slideUp"  className='animate-fade-in-left'>
                 <User/> Contact
-            </List>
+            </List> */}
             </div>
 
             {/* List 2 */}
@@ -114,49 +116,31 @@ const Menu: FC<MenuProps> = ({}) => {
             </div>
 
             {/* List 3 */}
-            {/* <div className="mt-5">Projects</div>
+            <div className='animate-fade-in-down'>
+            <div className="mt-5">Projects</div>
             <List
                 target="_blank"
-                link="https://github.com/nwaliaez/ezClothing"
+                link="https://harshit-ostwal-todo-list.vercel.app"
                 effect="slideUp"
+                className='animate-fade-in-left'
             >
-                <ShoppingCart /> Ez CLothing
+                <ListTodo color='#b5179e'/> ToDo List
             </List>
             <List
                 target="_blank"
-                link="https://github.com/nwaliaez/eCommerce"
                 effect="slideUp"
+                className='animate-fade-in-right'
             >
-                <ShoppingCart /> Ecommerce
+                <ShoppingCart color="#2a9d8f"/> Ecommerce
             </List>
             <List
                 target="_blank"
-                link="https://github.com/nwaliaez/HardhatLottery"
                 effect="slideUp"
+                className='animate-fade-in-left'
             >
-                <ShoppingCart /> Lottery
+                <ListFilter color="#f77f00"/> Billing Software
             </List>
-            <List
-                target="_blank"
-                link="https://github.com/nwaliaez/filetransfer-webrtc"
-                effect="slideUp"
-            >
-                <ShoppingCart /> File Sharing
-            </List>
-            <List
-                target="_blank"
-                link="https://github.com/nwaliaez/dalleClone"
-                effect="slideUp"
-            >
-                <ShoppingCart /> Dalle Clone
-            </List>
-            <List
-                target="_blank"
-                link="https://snake-nwaliaez.vercel.app/"
-                effect="slideUp"
-            >
-                <ShoppingCart /> Ex Clone
-            </List> */}
+        </div>
         </div>
     );
 };

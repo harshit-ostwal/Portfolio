@@ -11,9 +11,9 @@ interface CardSectionProps  {
 const CardSection: FC<CardSectionProps> = ({ title, animation, data }) => {
     return (
         <section className={animation}>
-            <div className='grid gap-5 p-5 md:p-0 mb-20'>
+            <div className='grid gap-5 p-5 md:p-0 mb-5'>
                 <div className="md:ms-5 lg:ms-0 text-xl font-bold text-highlight mt-20">{title}</div>
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-5 md:ms-5 md:me-5 lg:grid-cols-3 lg:gap-5 lg:ms-0 xl:grid-cols-3 gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 md:ms-5 md:me-5 lg:grid-cols-4 lg:gap-5 lg:ms-0 xl:grid-cols-4 gap-5">
                     {data.map((card) => (
                         <Card
                             href={card.href}

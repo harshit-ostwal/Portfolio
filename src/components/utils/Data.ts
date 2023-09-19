@@ -1,3 +1,10 @@
+import {
+    LucideIcon,
+    ListTodo,
+    ListFilter,
+    ShoppingCart
+} from 'lucide-react';
+
 export interface ISectionCardData {
     id: number;
     title: string;
@@ -8,72 +15,43 @@ export interface ISectionCardData {
     href?: string;
 }
 
-export interface ISectionBlogData {
+export interface IProjectSectionCardData {
     id: number;
+    Icon: LucideIcon;
     title: string;
-    date: string;
-    src: string;
-    desc: string;
+    bgColor: string;
+    techStack: string;
     href?: string;
-    like: number;
 }
-export const projectCard: ISectionCardData[] = [
+
+export const projectCard: IProjectSectionCardData[] = [
     {
         id: 1,
-        title: 'Jewellery Billing Software',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
+        title: 'ToDo List',
+        techStack:
+            'Next.js 13, Typescript, Tailwind CSS',
+        Icon: ListTodo,
+        bgColor: '#ff2c55',
+        href: 'https://harshit-ostwal-todo-list.vercel.app',
     },
     {
         id: 2,
-        title: 'Pawn Billing Software',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
+        title: 'Ecommerce',
+        techStack:
+        'NodeJs, Express, Mongoose, Next.js 13, Next Auth, React Hook Form, Typescript, Tailwind CSS',
+        Icon: ShoppingCart,
+        bgColor: '#e9c46a',
+        href: 'https://github.com/nwaliaez/HardhatLottery',
     },
     {
         id: 3,
-        title: 'Billing App',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
+        title: 'Billing Software',
+        techStack:
+            'C# , Bunifu UI , Microsoft Access DataBase',
+        Icon: ListFilter,
+        bgColor: '#2a9d8f',
+        href: 'https://github.com/nwaliaez/HardhatLottery',
     },
-    {
-        id: 4,
-        title: 'Ecommerce',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-    },
-    {
-        id: 5,
-        title: 'Google Drive File Sharing',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-    },
-    {
-        id: 6,
-        title: 'Whatsapp C#',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-    },
-    {
-        id: 7,
-        title: 'UPI/QR Payment C#',
-        src: '/projects/ecommerce.jpg',
-        exp: '1 day ago',
-        snippetCount: 1128,
-        progress: 100,
-    }
 ];
 
 export const frontendCard: ISectionCardData[] = [
@@ -245,45 +223,5 @@ export const webCard: ISectionCardData[] = [
         exp: '1 day ago',
         snippetCount: 1128,
         progress: 100,
-    }
-];
-
-
-export const Posts: ISectionBlogData[] = [
-    {
-        id: 1,
-        title: 'My First Post',
-        date: '1 day ago',
-        src: '/tech/others/wix.png',
-        desc: 'This is my first blog post.',
-        href: '',
-        like: 10,
-    },
-    {
-        id: 2,
-        title: 'My First Post',
-        date: '1 day ago',
-        src: '/tech/others/wix.png',
-        desc: 'This is my first blog post.',
-        href: '',
-        like: 10,
-    },
-    {
-        id: 3,
-        title: 'My First Post',
-        date: '1 day ago',
-        src: '/tech/others/wix.png',
-        desc: 'This is my first blog post.',
-        href: '',
-        like: 10,
-    },
-    {
-        id: 4,
-        title: 'My First Post',
-        date: '1 day ago',
-        src: '/tech/others/wix.png',
-        desc: 'This is my first blog post.',
-        href: '',
-        like: 10,
     }
 ];
