@@ -32,7 +32,7 @@ export const projectCard: IProjectSectionCardData[] = [
             'Next.js 13, Typescript, Tailwind CSS',
         Icon: ListTodo,
         bgColor: '#ff2c55',
-        href: 'https://harshit-ostwal-todo-list.vercel.app',
+        href: 'https://harshit-ostwal-todo.vercel.app',
     },
     {
         id: 2,
@@ -41,7 +41,7 @@ export const projectCard: IProjectSectionCardData[] = [
         'NodeJs, Express, Mongoose, Next.js 13, Next Auth, React Hook Form, Typescript, Tailwind CSS',
         Icon: ShoppingCart,
         bgColor: '#e9c46a',
-        href: 'https://github.com/nwaliaez/HardhatLottery',
+        href: 'https://harshit-ostwal-todo.vercel.app',
     },
     {
         id: 3,
@@ -50,7 +50,7 @@ export const projectCard: IProjectSectionCardData[] = [
             'C# , Bunifu UI , Microsoft Access DataBase',
         Icon: ListFilter,
         bgColor: '#2a9d8f',
-        href: 'https://github.com/nwaliaez/HardhatLottery',
+        href: 'https://harshit-ostwal-todo.vercel.app',
     },
 ];
 
