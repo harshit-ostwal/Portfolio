@@ -11,9 +11,9 @@ interface ProjectCardSectionProps {
 const ProjectCardSection: FC<ProjectCardSectionProps> = ({ title, animation, data }) => {
     return (
         <section className={animation}>
-            <div className="grid gap-5 p-5 mt-5 md:p-0">
-                <div className="text-xl font-bold text-highlight">{title}</div>
-                <div className="grid grid-cols-1 md:grid-cols-2 text-highlight lg:grid-cols-2 xl::grid-cols-3 gap-5">
+            <div className="grid gap-5 p-5 mt-5 md:p-0 overflow-hidden">
+                <div className="text-xl font-bold text-highlight overflow-hidden">{title}</div>
+                <div className="grid grid-cols-1 md:grid-cols-2 text-highlight overflow-hidden lg:grid-cols-2 xl::grid-cols-3 gap-5">
                     {data.map((card) => (
                         <ProjectsCard
                             href={card.href}
