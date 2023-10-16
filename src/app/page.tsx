@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Cover />
-      {/* <Projects/> */}
+      <Projects/>
       <Skill/>
     </div>
   );

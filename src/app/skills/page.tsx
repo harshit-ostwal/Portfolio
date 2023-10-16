@@ -10,7 +10,7 @@ import {
 export default function Skill() {
     return (
         <>
-            <div className="flex flex-col gap-10 lg:px-10 ">
+            <div className="flex flex-col gap-10 lg:px-10 overflow-hidden">
                 <div>
                     <CardSection title="Frontend" animation='animate-fade-in-top' data={frontendCard} />
                     <CardSection title="Backend" animation='animate-fade-in-down' data={backendCard} />
