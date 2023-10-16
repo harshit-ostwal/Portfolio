@@ -80,12 +80,12 @@ module.exports = {
             }
         },
         animation: {
-            'fade-in': 'fade-in 2s ease-out',
-            'fade-out': 'fade-out 2s ease-out',
-            'fade-in-top': 'fade-in-top 2s ease-out',
-            'fade-in-down': 'fade-in-down 2s ease-out',
-            'fade-in-right': 'fade-in-right 2s ease-out',
-            'fade-in-left': 'fade-in-left 2s ease-out'
+            'fade-in': 'fade-in 1s ease-out',
+            'fade-out': 'fade-out 1s ease-out',
+            'fade-in-top': 'fade-in-top 1s ease-out',
+            'fade-in-down': 'fade-in-down 1s ease-out',
+            'fade-in-right': 'fade-in-right 1s ease-out',
+            'fade-in-left': 'fade-in-left 1s ease-out'
         }
       },
   },

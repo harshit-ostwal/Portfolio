@@ -19,16 +19,16 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
 }) => {
     return (
         <Link target="_blank" href={href || '/'}>
-            <div className="flex gap-3 bg-cardPrimary rounded-lg overflow-ellipsis p-3">
+            <div className="flex gap-3 bg-cardPrimary rounded-lg overflow-ellipsis p-5">
                 <div
-                    className="flex h-20 w-20 rounded-md justify-center items-center"
+                    className="flex py-8 px-8 rounded-md justify-center items-center"
                     style={{ backgroundColor: bgColor }}
                 >
                     <Icon />
                 </div>
                 <div className="flex flex-col">
-                    <div className="flex font-bold">{title}</div>
-                    <div className="flex text-info text-sm">{techStack}</div>
+                    <div className="font-bold">{title}</div>
+                    <div className="text-info text-sm">{techStack}</div>
                 </div>
             </div>
         </Link>
